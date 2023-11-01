@@ -64,10 +64,7 @@ public class DrugInteractions
 			}
 		}
 		BufferedReader dontMixFile = new BufferedReader( new FileReader( "dontMix.txt" ) );
-		//System.out.println(patients);
-		/*for (String mix : dontMix) {
-			System.out.println(mix);
-		} */
+		
 		while (dontMixFile.ready()) {
 			String[] tokens = dontMixFile.readLine().split(",");
 			for(String patients : allPatients) {
